@@ -160,6 +160,7 @@
 
 <!--    </build>-->
 
+
     <build>
         <plugins>
             <plugin><!--derlemek için-->
@@ -168,17 +169,16 @@
                 <version>3.0.0-M1</version>
                 <configuration>
 
-                    <includes>
-                        <!-- for  run class or classes  /:bulunduğu lokasyonu bütün klasörlere göre bulabiliyor   -->
-                        <include>/_04_TestRunnerSmoke.java</include>
-                    </includes>
+                     <includes>
+                     <!-- for  run class or classes  **/:bulunduğu lokasyonu bütün klasörlere göre bulabiliyor   -->
+                     <include>**/_04_TestRunnerSmoke.java</include>
+                     </includes>
                     <testFailureIgnore>true</testFailureIgnore>
 
                 </configuration>
             </plugin>
         </plugins>
     </build>
-    Bu kanalda mesaj gönderme iznine sahip değilsin.
 
 
 
